@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dlen.lebbang">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--action标签表明该活动可以响应引号里面的action，这里是主的action表明这是主活动-->
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--更精确地指明当前活动能够响应的Intent中还可能带有的category-->
+                <!--使用隐式intent时需要指明action(一个intent只能指定一个)和category(一个intent可以指定多个)-->
+            </intent-filter>
+        </activity> <!--主活动-->
+        <activity android:name=".zhuCe" />
+        <activity android:name=".GuanYuLeBang" />
+        <activity
+            android:name=".RenWuLan"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".WoDeXinXi" />
+        <activity android:name=".rwSheZhi" />
+        <activity android:name=".SheZhiWoDeXinXi" />
+        <activity android:name=".RenWuJuTiXinXi" />
+        <activity android:name=".FaBuXinDeRenWu" />
+        <activity android:name=".WoFaBuDeRenWu" />
+        <activity android:name=".ShenQingRen" />
+        <activity android:name=".task_information" />
+        <activity android:name=".FaBuDeRenWuMen" />
+        <activity android:name=".JieShouDeRenWuMen" />
+        <activity android:name=".DonateActivity"></activity>
+    </application>
+
+</manifest>

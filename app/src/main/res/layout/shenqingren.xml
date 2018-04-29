@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--有用的控件就五个，还没有设置id，分别是CircleImageView头像、TextView姓名、TextView电话号码、Button接受、Button拒绝-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/lebangbeijing"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <TableLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:textColor="#000000"
+                android:text="   乐帮   "
+                />
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000000" />
+            <TextView
+                android:text="   申请人的信息   "
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TableLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_width="fill_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tttXiang"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:src="@mipmap/edit" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="center"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:layout_weight="1"
+                android:visibility="invisible" />
+            <TableLayout
+                android:layout_weight="1">
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="姓名" />
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEFFF" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="蓝翔" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="电话" />
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEFFF" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="180333030303" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:layout_weight="1"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <Button
+                android:layout_weight="10"
+                android:visibility="invisible" />
+
+            <Button
+                style="@android:style/Widget.Button"
+                android:layout_weight="1"
+                android:text="同意TA"
+                android:textColor="#000000"
+                android:background="@drawable/btn_nor_down" />
+
+            <Button
+                android:layout_weight="10"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_weight="1"
+                android:text="拒绝TA"
+                android:textColor="#000000"
+                android:background="@drawable/btn_nor_down" />
+
+            <Button
+                android:layout_weight="10"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

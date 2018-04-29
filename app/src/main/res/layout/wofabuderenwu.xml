@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我发布的任务"/>
+
+    <TextView
+        android:text="    只是一个任务"
+        android:layout_width="match_parent"
+        android:layout_height="132dp" />
+
+    <TextView
+        android:text="图片详细信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TableRow>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="90dp"/>
+        </TableRow>
+
+        <TextView
+            android:text="评论
+    "
+            android:layout_gravity="fill"/>
+
+        <TextView
+            android:text="    暂时没有评论"
+            android:layout_gravity="fill"
+            android:layout_height="76dp" />
+
+        <ListView
+            android:id="@+id/renWuShiTu"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="0.96" />
+
+    </TableLayout>
+
+</LinearLayout>

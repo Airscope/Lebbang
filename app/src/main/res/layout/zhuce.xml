@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/zhucebeijing1"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="乐帮注册" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="0.59"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="          " />
+                <RelativeLayout
+                    android:layout_weight="10"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_wihte_frame" >
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:lines="1"
+                        android:padding="1dp"
+                        android:text="用户名"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:id="@+id/view11"
+                        android:layout_width="1dip"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/textView11"
+                        android:background="#EEEFFF" />
+
+                    <EditText
+                        android:id="@+id/zhuCeJieMianYongHuMing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/view11"
+                        android:ems="19"
+                        android:hint="请输入用户名"
+                        android:background="@null"
+                        android:drawable="@android:color/transparent"
+                        android:padding="1dp"
+                        android:textSize="12sp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="           " />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  " />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <TableLayout>
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="          " />
+                    <RelativeLayout
+                        android:layout_weight="10"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_wihte_frame" >
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:lines="1"
+                            android:padding="1dp"
+                            android:text="密  码"
+                            android:textSize="11sp" />
+
+                        <View
+                            android:id="@+id/view21"
+                            android:layout_width="1dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_toRightOf="@+id/textView21"
+                            android:background="#EEEFFF" />
+
+                        <EditText
+                            android:id="@+id/zhuCeJieMianMiMa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/view21"
+                            android:ems="19"
+                            android:hint="请输入密码"
+                            android:drawable="@android:color/transparent"
+                            android:background="@null"
+                            android:padding="1dp"
+                            android:textSize="12sp" >
+
+                            <requestFocus />
+                        </EditText>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="           " />
+                </TableRow>
+            </TableLayout>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  " />
+
+        <TableRow>
+
+            <Button
+                android:layout_weight="1"
+                android:visibility="invisible" />
+            <Button
+                android:id="@+id/zhuJieMianZhuCe"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_nor_down"
+                android:text="注 册"
+                android:textSize="13dp" />
+
+            <Button
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="           " />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="           " />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

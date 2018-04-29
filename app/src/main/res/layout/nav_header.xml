@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:background="@drawable/drawer_header">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_avatar_tangqi"
+        android:layout_above="@id/xxxxMing1"/>
+    <TextView
+        android:id="@+id/xxxYongFen1"
+        android:text="信用分啥的"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/ddddHuaHaoMa1"
+        android:text="电话号码啥的"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/xxxYongFen1"
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/xxxxMing1"
+        android:text="姓名啥的"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@id/ddddHuaHaoMa1"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>

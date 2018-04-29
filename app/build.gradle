@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+// 表示这是一个应用程序模块（可以直接运行），com.android.library表示为库模块（要依附其他应用程序模块运行）
+
+android {
+    compileSdkVersion 26 // 指定项目的编译版本（比如24对应android sdk7.0）
+    buildToolsVersion "26.0.2" // 项目构建工具的版本
+    defaultConfig {
+        applicationId "com.example.dlen.lebbang" // 指定项目的包名
+        minSdkVersion 19 // 最低兼容的android版本（如15表示最低兼容到android 4.0）
+        targetSdkVersion 24 // 表示在该版本号上已做了充分测试，系统会启用新的特性
+        versionCode 2 // 项目的版本号
+        versionName "1.1" // 项目的版本名
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // 是否启用代码混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // proguard-android.txt在sdk目录下，为所有项目通用的混淆规则；proguard-rules.pro在当前项目的根目录下，可以编写特有混淆规则
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies { // 指定当前项目的所有依赖关系，分为三种
+    // 本地依赖 compile fileTree(include: ['*.jar'], dir: 'libs') 把libs下所有jar包添加到构建路径中
+    // 远程依赖 compile 'com.bla.bal:bal-vx:xx.xx.xx' Gradle先检查本地有没有缓存，没有就联网下载
+    // 库依赖 compile project(':helper') 添加名为helper的库模块的依赖
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs') // 本地依赖
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'org.litepal.android:core:1.3.2'
+    compile 'com.android.support:design:24.2.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.facebook.fresco:fresco:1.7.1'
+    compile 'com.coldmoqiuli:banners:1.0.0'
+}

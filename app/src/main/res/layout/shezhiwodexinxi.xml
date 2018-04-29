@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/zhucebeijing1"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <TableLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:textColor="#FFFFFF"
+                android:text="   乐帮   "
+                />
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#000000" />
+            <TextView
+                android:text="   账户设置   "
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <TableLayout>
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="          " />
+                    <RelativeLayout
+                        android:layout_weight="10"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_wihte_frame" >
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:lines="1"
+                            android:padding="1dp"
+                            android:text="密  码"
+                            android:textSize="11sp" />
+
+                        <View
+                            android:id="@+id/view22"
+                            android:layout_width="1dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_toRightOf="@+id/textView21"
+                            android:background="#EEEFFF" />
+
+                        <EditText
+                            android:id="@+id/xxxMiMa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/view22"
+                            android:ems="19"
+                            android:hint="请输入新密码"
+                            android:drawable="@android:color/transparent"
+                            android:background="@null"
+                            android:padding="1dp"
+                            android:textSize="12sp" >
+
+                        </EditText>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="           " />
+                </TableRow>
+            </TableLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <TableLayout>
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="          " />
+                    <RelativeLayout
+                        android:layout_weight="10"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_wihte_frame" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:lines="1"
+                            android:padding="1dp"
+                            android:text="电话号码"
+                            android:textSize="11sp" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="1dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_toRightOf="@+id/textView2"
+                            android:background="#EEEFFF" />
+
+                        <EditText
+                            android:id="@+id/xxxGaiDianHuaHaoMa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/view2"
+                            android:ems="19"
+                            android:hint="请输入新的电话号码"
+                            android:drawable="@android:color/transparent"
+                            android:background="@null"
+                            android:padding="1dp"
+                            android:textSize="12sp" >
+
+                            <requestFocus />
+                        </EditText>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="           " />
+                </TableRow>
+            </TableLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <Button
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+                <Button
+                    android:id="@+id/qqqRenXiuGai"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_nor_down"
+                    android:layout_height="wrap_content"
+                    android:text="确认修改" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

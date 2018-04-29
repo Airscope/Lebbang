@@ -1,0 +1,11 @@
+<litepal>
+
+    <dbname value="lebang" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.example.dlen.lebbang.db.User"
+    </list>
+
+</litepal>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的信息"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/xxxYongFen"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/xxxxMing"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:id="@+id/ddddHuaHaoMa"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_weight="0.11" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/wwFaBuDeRenWu"
+        android:layout_height="wrap_content"
+        android:text="我发布的任务"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/wwJieShouDeRenWu"
+        android:layout_height="wrap_content"
+        android:text="我接受的任务"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/xxxGaiWoDeXinXi"
+        android:layout_height="wrap_content"
+        android:text="修改我的信息"/>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ddrawer_laayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <!--当在任务栏打开时，隐藏申请按钮-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/shenQingRenWu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@mipmap/phone"
+            app:backgroundTint="#00FF00"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="   乐帮   "
+                    />
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#000000" />
+                <TextView
+                    android:text="   我接受的任务   "
+                    />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <ImageView
+            android:id="@+id/rrrWuTuPian"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/blue"/>
+        <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:id="@+id/vv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tttXiang1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_avatar_tangqi" />
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@+id/tttXiang1"
+                    android:background="#EEEFFF" />
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="任务发布人："
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:textSize = "20dp"
+                            />
+                        <TextView
+                            android:text="玉儿"
+                            android:layout_weight="30"
+                            android:layout_height="35dp"
+                            android:textSize = "20dp"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="联系方式：  "
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:textSize = "20dp"
+                            />
+                        <TextView
+                            android:text="180333030303"
+                            android:layout_weight="30"
+                            android:layout_height="35dp"
+                            android:textSize = "20dp"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#E5E5E5" />
+        <TextView
+            android:id="@+id/vvv"
+            android:text="
+            任务具体描述
+"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/viewvv"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#E3E3E3" />
+        <TextView
+            android:text="电脑无故蓝屏，已经很多次了，求一个大神解决"
+            android:id="@+id/rrrWuDetails"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
